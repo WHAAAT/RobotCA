@@ -15,15 +15,15 @@
  */
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.2.1'
+    gradleVersion = '2.14.1'
 }
 
 buildscript {
 
-    apply from: "https://github.com/rosjava/android_core/raw/indigo/buildscript.gradle"
+    apply from: "https://github.com/rosjava/android_core/raw/kinetic/buildscript.gradle"
     dependencies {
         //Add this to fix the gradle plugin issues
-        classpath 'com.android.tools.build:gradle:1.5.0'
+        classpath 'com.android.tools.build:gradle:2.3.1'
 
         // TEST
         classpath 'junit:junit:4.12'
